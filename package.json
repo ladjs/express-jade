@@ -1,0 +1,41 @@
+{
+  "name": "express-jade",
+  "version": "0.0.1",
+  "description": "Express middleware to compile client-side Jade templates as vanilla JavaScript functions in the `window.jade` namespace.",
+  "main": "./index.js",
+  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "contributors": [
+    {
+      "name": "Nick Baugh",
+      "email": "niftylettuce@gmail.com"
+    }
+  ],
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "NODE_ENV=test mocha --reporter spec --bail --ignore-leaks --require test/support/should test/",
+    "test-cov": "NODE_ENV=test istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --ignore-leaks --require test/support/should  test/",
+    "test-travis": "NODE_ENV=test istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --ignore-leaks --require test/support/should test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niftylettuce/express-jade.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niftylettuce/express-jade/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/niftylettuce/express-jade",
+  "dependencies": {
+    "jade": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "debug": "^2.1.0",
+    "express": "^4.10.4",
+    "istanbul": "^0.3.2",
+    "mocha": "^2.0.1",
+    "serve-static": "^1.7.1",
+    "sinon": "^1.12.1",
+    "sinon-chai": "^2.6.0"
+  }
+}

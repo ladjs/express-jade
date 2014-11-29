@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>express-jade</title>
+  </head>
+  <body>
+
+    <!-- The content of this div will change upon page load -->
+    <div id="content">Loading user</div>
+
+    <!-- Include the Jade runtime for rendering templates -->
+    <!-- Note: Use `bower install -S jade` if you're using Bower  -->
+    <script src="/js/jade/runtime.js"></script>
+
+    <!-- Simply load the script and it will inject the template to window namespace -->
+    <script src="/js/templates/user/show.js"></script>
+
+    <!-- Very basic usage showing directory traversal as well -->
+    <script>
+      var $content = document.getElementById("content");
+      $content.innerHTML = jade['user/show']({
+        user: {
+          name: 'Nifty',
+          desc: 'Lettuce'
+        }
+      });
+    </script>
+
+  </body>
+</html>
