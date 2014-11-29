@@ -1,6 +1,6 @@
 {
   "name": "express-jade",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Express middleware to compile client-side Jade templates as template functions in the `window.jade` namespace.",
   "main": "./index.js",
   "author": "Nick Baugh <niftylettuce@gmail.com>",
@@ -26,11 +26,11 @@
   "license": "MIT",
   "homepage": "https://github.com/niftylettuce/express-jade",
   "dependencies": {
-    "jade": "^1.8.0"
+    "jade": "^1.8.0",
+    "debug": "^2.1.0"
   },
   "devDependencies": {
     "chai": "^1.10.0",
-    "debug": "^2.1.0",
     "express": "^4.10.4",
     "istanbul": "^0.3.2",
     "mocha": "^2.0.1",
