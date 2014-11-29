@@ -133,3 +133,4 @@ Start the app with `node app` and open <http://localhost:3000>.
 [downloads-url]: https://npmjs.org/package/express-jade
 [gulp]: http://gulpjs.com/
 [grunt]: http://gruntjs.com/
+[jade-options]: http://jade-lang.com/api/
